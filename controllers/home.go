@@ -9,6 +9,7 @@ type HomeController struct {
 }
 
 func (this *HomeController) Get() {
+	//this.Data["xsrf_token"] = this.XSRFToken()
 	this.Layout = "layouts/app.html"
 	this.TplName = "index.html"
 	this.LayoutSections = make(map[string]string)
